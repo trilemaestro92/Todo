@@ -7,20 +7,12 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const PORT = process.env.PORT || 8080;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6afe7cdc1456060fd8d9c461ee25ba36ce8d8074
 const db = require("./models");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6afe7cdc1456060fd8d9c461ee25ba36ce8d8074
 app.use(express.static("public"));
 
 // Routes
