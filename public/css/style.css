@@ -1,0 +1,174 @@
+body{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(7, 1fr);
+    background-color: #efeeec;
+    background-image: url(/assets/seigaiha.png)
+    
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+
+/* Layout */
+h1 {
+    height: 100px;
+    grid-row: 1;
+    align-content: flex-start;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #882D60, #6F256F );
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    padding-left: 25px;
+}
+
+main {
+    height: 100%;
+    width: 400px;
+    grid-row: 3/8;
+    grid-column:1;
+    display: flex;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px 1fr;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #ffffff98;
+
+
+}
+#date{
+
+    grid-row: 1;
+}
+
+#moment{
+    display:flex;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #4d4d4d;
+    font-size: 55px;
+   
+}
+#moment-2{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    width: 50px;
+   
+}
+#input-box{
+    display:flex;
+    align-self: flex-end;
+    grid-row: 2;
+ 
+}
+.form {
+    grid-row: 2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* contain: content;    */
+}
+
+
+#content {
+    grid-row: 3;
+    contain: content; 
+    overflow: scroll;
+    height: 100vh;
+}
+
+#todo {
+    width: 300px;
+    height: 30px;
+    padding-left: 8px;
+    border: 0px  ;
+    border-bottom: 1.5px solid grey;
+    margin-bottom: 10px;
+    background-color: #ffffff11;
+}
+
+#submit{
+    border: 0px;
+    background-color: white;
+    display: none;
+}
+
+
+/* Todo Content */
+.list-group-item {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+.mt-4 {
+    margin-top: 0px !important;
+}
+.listTask {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    font-style: normal !important;
+    color: #4d4d4d
+    
+}
+
+.list-group-item > button.delete,
+.list-group-item > button.complete {
+  float: right;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.show {
+    display: block;
+}
+
+.gray {
+    color: #afafaf;
+}
+
+.crossed{
+    color: rgb(206, 206, 206);
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+main{
+    height: 100%;
+    width: 400px;
+    grid-row: 3/8;
+    grid-column:1;
+    display: flex;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    overflow: auto;
+    border: 0px ;
+    box-shadow: 2px 2px 2px 2px #b4b4b4;
+
+   
+    
+}
+
+}
