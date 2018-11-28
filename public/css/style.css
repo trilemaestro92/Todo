@@ -1,8 +1,5 @@
 body{
     height: 100vh;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px repeat(7, 1fr);
     background-color: #efeeec;
     background-image: url(/assets/seigaiha.png)
     
@@ -18,22 +15,24 @@ body{
 
 main {
     height: 100vh;
-    width: 400px;
-    grid-row: 3/8;
-    grid-column:1;
-    display: flex;
+    width: 325px;
+    position: sticky;
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 50px 1fr;
+    grid-template-rows: 100px 1fr 1fr ;
     padding-left: 25px;
     padding-right: 25px;
     background-color: #ffffff83;
+    overflow: auto;
+    border: 0px ;
+    box-shadow: 2px 2px 2px 2px #b4b4b4;
 
 
 }
 
 h1{
+    min-width: 160px;
     margin-top: 50px;
     border: solid 1.5px #4d4d4d;
     border-radius: 5px 20px 5px;
@@ -53,7 +52,6 @@ h1{
     color: #303030;
 }
 #date{
-
     grid-row: 1;
 }
 
@@ -78,11 +76,11 @@ h1{
 #input-box{
     display:flex;
     align-self: flex-end;
-    grid-row: 2;
- 
 }
+
 .form {
-    grid-row: 2;
+    height: 50px;
+    grid-row: 3;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -90,14 +88,14 @@ h1{
 
 
 #content {
-    grid-row: 3;
+    grid-row: 2;
     overflow: auto;
-    height: 100vh;
+    height: 70vh;
     contain: content; 
 }
 
 #todo {
-    width: 300px;
+    width: 250px;
     height: 30px;
     padding-left: 8px;
     border: 0px  ;
@@ -146,25 +144,27 @@ h1{
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 770px) {
 
-main{
-    height: 100%;
-    width: 400px;
-    grid-row: 3/8;
-    grid-column:1;
-    display: flex;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
-    overflow: auto;
-    border: 0px ;
-    box-shadow: 2px 2px 2px 2px #b4b4b4;
-
-   
+    main {      
+        grid-template-rows: 100px 1fr 1fr ;
+    }
     
-}
+    .form {
+        height: 50px;
+        grid-row: 2;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
 
-
+    #content {
+        grid-row: 3;
+        overflow: auto;
+        height: 70vh;
+        contain: content; 
+    }
+    h1 {
+        min-width: 325px;
+    }
 }
