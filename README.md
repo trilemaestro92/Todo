@@ -41,4 +41,4 @@ npm start
 Browse to http://localhost:8080/
 
 
-**The app is using msql2 and sequalize. Therefore you need to have a local server running I'm using MAMP. I'm also using MySQL Workbench as the database development. **
+**The app is using msql2 and sequalize. Therefore you need to have a local server running, I'm using MAMP. I'm also using MySQL Workbench as the database development. **
