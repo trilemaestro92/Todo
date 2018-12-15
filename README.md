@@ -4,7 +4,7 @@ Heroku Link: https://todo-sql-socket.herokuapp.com/
 Todo list using SocketIO and SQL
 
 
-![](public/assets/todo.JPG)
+
 
 This application allow users to add/edit/delete inputs or tasks. 
 The front-end uses HTML, CSS, Bootstrap, and JavaScript.
@@ -20,4 +20,3 @@ The back-end uses Node.JS, Sequelize, MySQL, Express, and Socket.io.
 
 1. fork the repo
 2. npm i 
-3. run on local host
