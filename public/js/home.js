@@ -55,7 +55,6 @@ $(document).ready(function () {
         })
         socket.on('edited-text', function (data) {
             $('#content').empty()
-            // window.location.reload();
             runTodoQuery();
         })
 

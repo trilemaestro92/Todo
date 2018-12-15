@@ -1,7 +1,9 @@
 body{
     height: 100vh;
     background-color: #efeeec;
-    background-image: url(/assets/seigaiha.png)
+    background-image: url(/assets/vapor2.jpg);
+    background-position: center;
+    background-size: cover; 
     
 }
 
@@ -14,27 +16,27 @@ body{
 /* Layout */
 
 main {
-    height: 100vh;
+    height: 85vh;
     width: 325px;
+    min-width: 160px;
     position: sticky;
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 1fr ;
+    grid-template-rows: 100px 1fr 1fr;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: #ffffff83;
+    margin-top: 30%;
     overflow: auto;
-    border: 0px ;
-    box-shadow: 2px 2px 2px 2px #b4b4b4;
-
+    border: 1.25px outset ghostwhite;
+    border-radius: 3px;
 
 }
 
 h1{
     min-width: 160px;
-    margin-top: 50px;
-    border: solid 1.5px #4d4d4d;
+    margin-top: 30%;
+    border: outset 1.5px;
     border-radius: 5px 20px 5px;
     background-color: #ffffff11;
     
@@ -90,7 +92,7 @@ h1{
 #content {
     grid-row: 2;
     overflow: auto;
-    height: 70vh;
+    height: 55vh;
     contain: content; 
 }
 
@@ -99,9 +101,11 @@ h1{
     height: 30px;
     padding-left: 8px;
     border: 0px  ;
-    border-bottom: 1.5px solid grey;
+    border-bottom: 1.2px solid white;
     margin-bottom: 10px;
     background-color: #ffffff11;
+    font-size: 18px;
+    color: honeydew;
 }
 
 #submit{
@@ -111,12 +115,15 @@ h1{
 }
 
 
+
 /* Todo Content */
 .list-group-item {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 17px;
+    background-color: transparent;
+    border: 1.25px outset;
 }
 .mt-4 {
     margin-top: 0px !important;
@@ -128,6 +135,20 @@ h1{
   float: right;
   height: 25px;
   margin-left: 5px;
+}
+
+.btn {
+    border-style: outset;
+    border-width: 0 .5px 1px .5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn-light {
+    background-color: transparent;
+}
+.btn-secondary {
+    background-color: transparent;
 }
 
 .show {
